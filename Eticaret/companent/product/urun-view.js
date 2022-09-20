@@ -12,8 +12,9 @@ const ViewPars = (name,img,price) => {
                     borderTopRightRadius: 10,
                     width:200,
                     height: 200,
+
                     
-                }} source={('./assets/hadise.jpg')}>
+                }} source={{uri:"https://e.dijitalka.com/data/upload/urun/61a7a1b9d34cd-45562-1.jpg"}}>
                 </Image>
                 <TouchableOpacity>
                     <View style={{

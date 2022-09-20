@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, ScrollView, Image, TouchableOpacity } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Ionicons';
-import DiscoverContainer from '../../companent/product/DiscoverContainer';
+import HorizontalScrollView from '../../companent/product/HorizontalScrollView';
 const Home = () => {
     return (
         <View style={{ backgroundColor: "white" }}>
@@ -12,7 +12,7 @@ const Home = () => {
                     <TextInput placeholder='Ürün veya kategori ara'></TextInput>
             
                 </View>
-                <View style={{ width: 400 }}>
+                <View style={{ width: 3000 }}>
                     <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
                         <View style={{
                             flexDirection: "row", paddingTop: 90, alignItems: "center"
@@ -55,6 +55,7 @@ const Home = () => {
                                 <TouchableOpacity>
                                     <View style={{ width: 72, height: 72, backgroundColor: "#F1F4F9", borderRadius: 36, }}></View>
                                     <Text style={{ paddingLeft: 10, color: "#5E5E5E", fontFamily: 'Prata-Regular', fontSize: 16 }}>Çocuk</Text>
+     
                                 </TouchableOpacity>
                             </View>
                             <View style={{ flexDirection: "column", alignItems: "center", paddingLeft: 20, }}>
@@ -68,11 +69,11 @@ const Home = () => {
                 </View>
                 <View style={{ paddingTop: 10, paddingLeft: 5, paddingRight: 10 }}>
                     <Text style={{ paddingLeft: 10, fontSize: 26, color: "black", fontFamily: "ShipporiMinchoB1-Bold", paddingTop: 15, paddingBottom: 15 }}>En Popülerler</Text>
-                    <DiscoverContainer ></DiscoverContainer>
+                    <HorizontalScrollView ></HorizontalScrollView>
                     <Text style={{ paddingLeft: 10, fontSize: 26, color: "black", fontFamily: "ShipporiMinchoB1-Bold", paddingTop: 30, paddingBottom: 15 }}>Yeni Sezon</Text>
-                    <DiscoverContainer ></DiscoverContainer>
+                    <HorizontalScrollView ></HorizontalScrollView>
                     <Text style={{ paddingLeft: 10, fontSize: 26, color: "black", fontFamily: "ShipporiMinchoB1-Bold", paddingTop: 30, paddingBottom: 15 }}>En yeniler</Text>
-                    <DiscoverContainer></DiscoverContainer>
+                    <HorizontalScrollView></HorizontalScrollView>
                 </View>
             </ScrollView>
         </View>
